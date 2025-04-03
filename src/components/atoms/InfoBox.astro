@@ -1,0 +1,13 @@
+---
+interface Props {
+	title: string;
+	label: string;
+}
+
+const { title, label } = Astro.props;
+---
+
+<div class='slide-up-and-fade'>
+	<h5 class='text-3xl sm:text-4xl font-anton text-primary mb-1.5'>{title}</h5>
+	<p class='text-muted-foreground text-sm sm:text-base'>{label}</p>
+</div>

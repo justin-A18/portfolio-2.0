@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/roboto-flex';
+@import '@fontsource/anton';
+
+:root {
+	--color-primary: #F18F01;
+	--color-bg-primary-hover: #dedede;
+	--color-text-primary-foreground: #212121;
+	--color-text-muted-foreground: #b5b5b5;
+	--color-text-white: #dedede;
+}
+
+body {
+	background-color: var(--color-text-primary-foreground);
+	color: var(--color-text-white);
+}
+
+.container {
+	@apply w-full mx-auto max-w-[1148px] px-4;
+}
+
+.font-anton {
+	font-family: 'Anton', sans-serif;
+}
+
+.font-roboto {
+	font-family: 'Roboto Flex Variable', sans-serif;
+}
+
+.text-primary {
+	color: var(--color-primary);
+}
+
+.bg-primary {
+	background-color: var(--color-primary);
+}
+
+.bg-primary-hover {
+	background-color: var(--color-bg-primary-hover);
+}
+
+.text-primary-foreground {
+	color: var(--color-text-primary-foreground);
+}
+
+.text-muted-foreground {
+	color: var(--color-text-muted-foreground);
+}
+
+.text-white {
+	color: var(--color-text-white);
+}

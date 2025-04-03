@@ -1,0 +1,16 @@
+---
+import { NETWORKS } from '../../const/networks.const';
+import BoxIcon from '../atoms/BoxIcon.astro';
+---
+
+<div class='flex items-center'>
+	{
+		NETWORKS.map(({ icon: Icon, href, label }) => (
+			<BoxIcon
+				href={href}
+				label={label}>
+				<Icon />
+			</BoxIcon>
+		))
+	}
+</div>
