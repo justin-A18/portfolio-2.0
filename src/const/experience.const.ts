@@ -2,7 +2,7 @@ export const EXPERIENCE = [
 	{
 		title: 'Frontend Developer',
 		company: 'OpenLab Latam',
-		date: 'Mar 2024 - Present',
+		date: 'Mar 2025 - Present',
 	},
 	{
 		title: 'Frontend Developer',
