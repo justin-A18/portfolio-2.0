@@ -1,0 +1,27 @@
+---
+import type { Technology } from '../../interfaces/global.interface';
+const { stack, title } = Astro.props as Technology;
+---
+
+<div class='grid sm:grid-cols-12 gap-8 sm:gap-0'>
+	<div class='sm:col-span-5'>
+		<p class='text-5xl font-anton leading-none text-muted-foreground uppercase'>
+			{title}
+		</p>
+	</div>
+	<div class='sm:col-span-7 flex gap-x-11 gap-y-9 flex-wrap'>
+		{
+			stack.map(({ icon: Icon, name }) => (
+				<div class='flex gap-3.5 items-center leading-none'>
+					<div>
+						<Icon
+							width={36}
+							height={36}
+						/>
+					</div>
+					<span class='text-2xl capitalize'>{name}</span>
+				</div>
+			))
+		}
+	</div>
+</div>

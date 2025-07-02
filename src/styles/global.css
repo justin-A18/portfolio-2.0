@@ -3,7 +3,7 @@
 @import '@fontsource/anton';
 
 :root {
-	--color-primary: #F18F01;
+	--color-primary: #f18f01;
 	--color-bg-primary-hover: #dedede;
 	--color-text-primary-foreground: #212121;
 	--color-text-muted-foreground: #b5b5b5;
@@ -49,4 +49,17 @@ body {
 
 .text-white {
 	color: var(--color-text-white);
+}
+
+.spin-slow {
+	animation: slow-spin 4s linear infinite;
+}
+
+@keyframes slow-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

@@ -1,0 +1,15 @@
+---
+import { TECHNOLOGIES } from '../../const/technologies.const';
+import TypographyWithIcon from '../atoms/TypographyWithIcon.astro';
+import BoxStack from '../molecules/BoxStack.astro';
+---
+
+<section class='pb-64'>
+	<div class='container'>
+		<TypographyWithIcon title='My Stack' />
+
+		<div class='space-y-20'>
+			{TECHNOLOGIES.map((tech) => <BoxStack {...tech} />)}
+		</div>
+	</div>
+</section>

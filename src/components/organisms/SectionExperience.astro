@@ -1,0 +1,15 @@
+---
+import TypographyWithIcon from '../atoms/TypographyWithIcon.astro';
+import BoxExperience from '../molecules/BoxExperience.astro';
+import { EXPERIENCE } from '../../const/experience.const';
+---
+
+<section class='pb-64'>
+	<div class='container'>
+		<TypographyWithIcon title='My Experience' />
+
+		<div class='grid gap-14'>
+			{EXPERIENCE.map((exp) => <BoxExperience {...exp} />)}
+		</div>
+	</div>
+</section>

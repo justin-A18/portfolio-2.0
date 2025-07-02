@@ -1,0 +1,13 @@
+---
+import type { Experience } from '../../interfaces/global.interface';
+
+const { company, date, title } = Astro.props as Experience;
+---
+
+<div class='experience-item'>
+	<p class='text-xl text-muted-foreground'>{company}</p>
+	<p class='text-5xl font-anton leading-none mt-3.5 mb-2.5'>
+		{title}
+	</p>
+	<p class='text-lg text-muted-foreground'>{date}</p>
+</div>
